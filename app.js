@@ -4,6 +4,7 @@ var app = express();
 var giphy = require('giphy-api')();
 var exphbs = require('express-handlebars');
 
+// layout
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
